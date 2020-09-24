@@ -111,6 +111,8 @@ RUN set -x  \
       unzip \
       wget \
       zlib-dev \
+      supervisor \
+      openssh \
   && apk add --no-cache --update \
       curl \
       monit \
@@ -206,6 +208,7 @@ RUN set -x  \
 COPY conf/ /conf
 COPY test/ /tmp/test
 COPY error/ /tmp/error/
+COPY conf/supervisor/supervisord.conf /etc/supervisord.conf
 COPY check_wwwdata.sh /usr/bin/check_wwwdata
 COPY check_folder.sh /usr/bin/check_folder
 COPY check_host.sh /usr/bin/check_host
