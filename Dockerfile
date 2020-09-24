@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 LABEL org.label-schema.schema-version="1.0" \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name="CentOS NGINX PHP-FPM Image" \
+      org.label-schema.name="Alpine NGINX Image" \
       org.label-schema.license="AGPL-3.0-or-later" \
       org.label-schema.vendor="ATT Group"
 LABEL org.opencontainers.image.created=$BUILD_DATE \
