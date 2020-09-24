@@ -1,0 +1,3 @@
+~\/*staging.example*?$ "noindex, follow";
+~\/*.(html)?$ "all";
+~\/*.(php)?$ "all";
